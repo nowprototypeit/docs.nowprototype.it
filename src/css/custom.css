@@ -66,7 +66,7 @@
     font-style: normal;
     color: #1b2441;
   }
-  p, li, td, th, blockquote, a, span, div {
+  p, li, td, th {
     font-family: "Hanken Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
