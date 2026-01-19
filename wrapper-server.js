@@ -38,14 +38,6 @@ function getErrorPage(type, message) {
   return ERROR_PAGE_TEMPLATE.replaceAll('{{ERROR_TYPE}}', type).replaceAll('{{ERROR_MESSAGE}}', message).replaceAll('{{STYLESHEET_URL}}', ERROR_PAGE_STYLESHEET_URL);
 }
 
-app.use((req, res, next) => {
-  const url = req.originalUrl.split('?')[0];
-  if (!url.endsWith('.js') && !url.endsWith('.css') && !url.endsWith('.png')) {
-    console.log(`Seen URL [${req.originalUrl}]`);
-  }
-  next();
-})
-
 app.use((req, _res, next) => {
   if (staticRedirects.hasOwnProperty(req.path)) {
     return redirect(_res, staticRedirects[req.path], 'staticRedirect');

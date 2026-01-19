@@ -13,6 +13,9 @@
   --ifm-color-primary-light: #1e2848;
   --ifm-color-primary-lighter: #1f294b;
   --ifm-color-primary-lightest: #232f55;
+  --ifm-font-size-base: 18px;
+  --ifm-font-family-base: "Hanken Grotesk", sans-serif;
+  --ifm-heading-font-family: "Dosis", sans-serif;
 
   font-family: "Hanken Grotesk", sans-serif;
   font-optical-sizing: auto;
@@ -36,23 +39,22 @@
 .navbar {
   display: block;
   text-align: center;
-  min-height: 10rem;
+  min-height: 5.5rem;
   border-bottom: 1px solid #1b2441;
   background-image: url('/img/logo.png');
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-position: center 1rem;
-  background-size: 38rem;
-  padding-top: 6.5rem;
+  background-position: center 0.5rem;
+  background-size: 19rem;
+  padding-top: 3.25rem;
 
-  @media (max-width: 39rem) {
+  @media (max-width: 19rem) {
     background-size: 100vw;
-    /*padding-top: 5.5rem;*/
   }
   h3 {
     font-family: "Dosis", sans-serif;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -81,7 +83,7 @@
 }
 
 .error-page {
-  padding: 4rem 1rem;
+  padding: 2rem 0.5rem;
 }
 
 .theme-doc-sidebar-container {
@@ -99,6 +101,6 @@
 .navbar__toggle {
   position: absolute;
   /*z-index: 9999;*/
-  top: 6.9rem;
-  left: 1rem;
+  top: 3.4rem;
+  left: 0.5rem;
 }
