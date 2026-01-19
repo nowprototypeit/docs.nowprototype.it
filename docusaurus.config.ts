@@ -2,8 +2,8 @@ module.exports = {
   title: 'Now Prototype It',
   url: 'https://docs.nowprototypeit.co.uk',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: 'warn',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
   presets: [

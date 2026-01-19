@@ -13,7 +13,15 @@
   --ifm-color-primary-light: #1e2848;
   --ifm-color-primary-lighter: #1f294b;
   --ifm-color-primary-lightest: #232f55;
+
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #1b2441;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -42,18 +50,38 @@
     /*padding-top: 5.5rem;*/
   }
   h3 {
+    font-family: "Dosis", sans-serif;
     font-weight: 400;
     font-size: 2rem;
   }
 }
 
-.markdown a {
-  /*font-weight: 600;*/
-  color: #35529C;
-  &:hover {
-    text-decoration: none;
-    border-bottom: 2px solid #35529C;
+.markdown, .error-page {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #1b2441;
   }
+  p, li, td, th, blockquote, a, span, div {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #1b2441;
+  }
+  a {
+    color: #35529C;
+    &:hover {
+      text-decoration: none;
+      border-bottom: 2px solid #35529C;
+    }
+  }
+}
+
+.error-page {
+  padding: 4rem 1rem;
 }
 
 .theme-doc-sidebar-container {

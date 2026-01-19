@@ -6,7 +6,7 @@ When your variant is finished and has successfully passed all tests, you can pub
 
 Before you publish your variant, make sure you: 
 
-* [Test your variant](/variants/creating-variants/test-a-variant)
+* [Test your variant](/latest/variants/creating-variants/test-a-variant)
 * Update the `version` field in your `package.json` file, to ensure that users get the latest version of your variant.  
 
 ## Publish your variant
