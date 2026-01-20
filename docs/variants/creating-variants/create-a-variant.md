@@ -2,7 +2,7 @@
 
 In Now Prototype It, you can use **variants** to create pre-configured setups that can be reused across multiple prototypes. This is particularly useful for teams or organisations that want to maintain consistency in their prototyping process.
 
-To understand how users apply a variant, see [Use a variant](/variants/use-a-variant).
+To understand how users apply a variant, see [Use a variant](/latest/variants/use-a-variant).
 
 This guide describes the following steps to create a variant:
 
@@ -12,14 +12,14 @@ This guide describes the following steps to create a variant:
 1. **Configure your variant to install other NPM packages (optional)**: Add other NPM packages you want your variant to install when users use it to create a new prototype.
 1. **Change your variant's install scripts (optional)**: Add or modify the install scripts that run when your variant runs.
 
-Once you've created your variant, you can [test it](/variants/creating-variants/test-a-variant) and [publish it](/variants/creating-variants/publish-a-variant).
+Once you've created your variant, you can [test it](/latest/variants/creating-variants/test-a-variant) and [publish it](/latest/variants/creating-variants/publish-a-variant).
 
 ## Before you start
 
 Before you create a new variant, make sure you:
 
-* Install the required tools listed in the [Setup](/getting-started/setup) documentation.
-* See [Understand variants](/variants/creating-variants/understand-variants) for details on the structure of a variant, and how users interact with them.
+* Install the required tools listed in the [Setup](/latest/getting-started/setup) documentation.
+* See [Understand variants](/latest/variants/creating-variants/understand-variants) for details on the structure of a variant, and how users interact with them.
 
 ## Create the variant structure
 
@@ -122,9 +122,9 @@ For example, in the configuration above, the files in `my-really-helpful-starter
 
 ## Test your new variant
 
-At this point, you should [test your variant](/variants/creating-variants/test-a-variant) to make sure everything is functioning.
+At this point, you should [test your variant](/latest/variants/creating-variants/test-a-variant) to make sure everything is functioning.
 
-If the test is successful, and if the variant is ready, you can then [publish your variant](/variants/creating-variants/publish-a-variant) as an NPM package.
+If the test is successful, and if the variant is ready, you can then [publish your variant](/latest/variants/creating-variants/publish-a-variant) as an NPM package.
 
 ## Configure your variant to install other NPM packages (optional)
 
@@ -213,4 +213,4 @@ The following example adds the `postCreateJSScripts` array to the variant config
 }
 ```
 
->**Important**: Always [test your variant](/variants/creating-variants/test-a-variant) before publishing, to make sure the changes you're making work as expected.
+>**Important**: Always [test your variant](/latest/variants/creating-variants/test-a-variant) before publishing, to make sure the changes you're making work as expected.

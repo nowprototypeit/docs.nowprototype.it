@@ -8,14 +8,14 @@ The pages themselves are in the `views/url-based` directory, adding new `md` fil
 
 ## Contributing
 
-This repository uses topic-based authoring for documentation structure, and Docusaurus to generate the documentation site. 
+This repository uses topic-based authoring for documentation structure, and Docusaurus to generate the documentation site.
 
 ### Running locally
 
 To run the documentation locally from this repo, open a terminal at the root and run:
 
 ```bash
-npm start
+npm run dev
 ```
 
 ### Adding new pages
