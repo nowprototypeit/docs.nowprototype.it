@@ -13,7 +13,7 @@ With Now Prototype It, you can make high-fidelity interactive web prototypes, po
 Depending on how you like to start learning, you can:
 
 * Read through this documentation
-* [Install and explore a demo prototype](getting-started/try-demo-prototype)
+* [Install and explore a demo prototype](/latest/getting-started/try-demo-prototype)
 
 ## Get in touch
 
