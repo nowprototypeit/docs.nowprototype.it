@@ -12,7 +12,7 @@ This page describes how to enable and use Now View It.
 
 Before you can share a prototype, you need to: 
 
-* Request access to Now View It. Please [email us](mailto:support@nowprototype.it) to request access.
+* Get access to Now View It. Please [email us](mailto:support@nowprototype.it) to request access.
 * Enable Now View It.
 
 
