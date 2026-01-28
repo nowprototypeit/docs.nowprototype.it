@@ -33,10 +33,19 @@ Now that you've enabled Now View It, a new **Hosting** tab should be available i
 3. In the **Name of prototype** text field, give your prototype a name. This name will appear in the URL for your prototype.
 4. Select **Upload prototype**. 
 
-Keep your browser open while NPI sets up your prototype.  
+Keep your browser open while NPI sets up your prototype. 
+
+When your prototype is ready, NPI provides a preview URL, so that you can check your prototype is running as expected.
 
 ## Share a prototype
 
-When your prototype is ready, NPI provides a URL. This URL points to a fully interactive instance of your prototype. 
+There are two ways to share a NPI prototype:
 
-You can use this URL to share the prototype for user research and collaboration. 
+* A single-use link, which can only be used once
+* A reusable link, which can be used multiple times and by multiple users
+
+To generate these links:
+
+1. Log into your [NPI account](https://nowprototype.it/account#/) and go to [Uploaded prototypes](https://nowprototype.it/account/prototypes#/). 
+1. From the list, select the prototype you want to share.
+1. In the **Generate links** section, select the type of link you want to generate.
