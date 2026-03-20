@@ -34,7 +34,17 @@ const v0xRedirects = {
   '/setup': '/getting-started/setup',
   '/prototyping/nunjucks': '/prototypes/nunjucks',
   '/prototyping/create-prototype': '/getting-started/try-demo-prototype',
-  '/prototyping': '/prototypes'
+  '/prototyping': '/prototypes',
+  '/prototyping/installation': '/prototypes/create-prototype',
+  '/variants/create-a-variant': '/variants/creating-variants/create-a-variant',
+  '/variants/understand-prototypes': '/variants/creating-variants/understand-variants',
+  '/variants/understand-variants': '/variants/creating-variants/understand-variants',
+  '/variants/test-a-variant': '/variants/creating-variants/test-a-variant',
+  '/variant/test-a-variant': '/variants/creating-variants/test-a-variant',
+  '/variants/create-a-variant/use-a-variant': '/variants/creating-variants/understand-variants',
+  '/variants/publish-a-variant': '/variants/creating-variants/publish-a-variant',
+  '/try-demo-project': '/getting-started/try-demo-prototype',
+  '/installation': '/getting-started/setup'
 }
 
 const notYetImplementedRedirects = [
@@ -85,13 +95,17 @@ app.use((req, res, next) => {
 })
 
 app.use((req, _res, next) => {
-  if (staticRedirects.hasOwnProperty(req.path)) {
-    return redirect(_res, staticRedirects[req.path], 'staticRedirect (global)');
+  const reqPath = req.path
+  if (staticRedirects.hasOwnProperty(reqPath)) {
+    return redirect(_res, staticRedirects[reqPath], 'staticRedirect (global)');
   }
-  const firstPathPart = req.path.split('/')[1];
+  const firstPathPart = reqPath.split('/')[1];
   const remaining = req.originalUrl.slice(firstPathPart.length + 1);
   if (['latest', '0.x'].includes(firstPathPart) && v0xRedirects.hasOwnProperty(remaining)) {
     return redirect(_res, `/${firstPathPart}${v0xRedirects[remaining]}`, 'staticRedirect (0.x or latest)');
+  }
+  if (v0xRedirects.hasOwnProperty(reqPath)) {
+    return redirect(_res, `/latest${v0xRedirects[reqPath]}`, 'staticRedirect (0.x, but exact match)');
   }
   next();
 });
